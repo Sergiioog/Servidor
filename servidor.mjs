@@ -34,8 +34,32 @@ const server = http.createServer((req, res) => {
             }
         });
 
+    } else if (req.url === "/pages/pagina2.html") {
+
+        fs.readFile('./pages/pagina2.html', 'utf-8', (error, data) => {
+            if (error) {
+                res.writeHead(500, {"Content-Type":"text/plain"});
+                res.end("Error interno del servidor: " + error);
+            } else {
+                res.writeHead(200, {"Content-Type":"text/html"});
+                res.end(data);
+            }
+        });
+
+    } else if (req.url === "/pages/pagina3.html") {
+
+        fs.readFile('./pages/pagina3.html', 'utf-8', (error, data) => {
+            if (error) {
+                res.writeHead(500, {"Content-Type":"text/plain"});
+                res.end("Error interno del servidor: " + error);
+            } else {
+                res.writeHead(200, {"Content-Type":"text/html"});
+                res.end(data);
+            }
+        });
+
     } else {
-        
+
         fs.readFile('./pages/404.html', 'utf-8', (error, data) => {
             if (error) {
                 console.log("Lo sentimos, la página de error no se pudo mostrar")
