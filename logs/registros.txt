@@ -1,20 +1,7 @@
 
- Usuario entrando al programa, PUERTO: 3000, HOST: 127.0.0.1
- Usuario entrando al programa, PUERTO: 3000, HOST: 127.0.0.1
- Usuario entrando al programa, PUERTO: 3000, HOST: 127.0.0.1
- Usuario entrando al programa, PUERTO: 3000, HOST: 127.0.0.1
- Usuario entrando al programa, PUERTO: 3000, HOST: 127.0.0.1
- Usuario entrando al programa, PUERTO: 3000, HOST: 127.0.0.1
- Usuario entrando al programa, PUERTO: 3000, HOST: 127.0.0.1
- Usuario entrando al programa, PUERTO: 3000, HOST: 127.0.0.1
- Usuario entrando al programa, PUERTO: 3000, HOST: 127.0.0.1
- Usuario entrando al programa, PUERTO: 3000, HOST: 127.0.0.1
- Usuario entrando al programa, PUERTO: 3000, HOST: 127.0.0.1
- Usuario entrando al programa, PUERTO: 3000, HOST: 127.0.0.1
- Usuario entrando al programa, PUERTO: 3000, HOST: 127.0.0.1
- Usuario entrando al programa, PUERTO: 3000, HOST: 127.0.0.1
- Usuario entrando al programa, PUERTO: 3000, HOST: 127.0.0.1
- Usuario entrando al programa, PUERTO: 3000, HOST: 127.0.0.1
- Usuario entrando al programa, PUERTO: 3000, HOST: 127.0.0.1
- Usuario entrando al programa, PUERTO: 3000, HOST: 127.0.0.1
- Usuario entrando al programa, PUERTO: 3000, HOST: 127.0.0.1
+
+
+ Usuario entrando al programa, PUERTO: 3000, HOST: 127.0.0.1 en la RUTA: /
+ Usuario entrando al programa, PUERTO: 3000, HOST: 127.0.0.1 en la RUTA: /pages/pagina1.html
+ Usuario entrando al programa, PUERTO: 3000, HOST: 127.0.0.1 en la RUTA: /pages/pagina2.html
+ Usuario entrando al programa, PUERTO: 3000, HOST: 127.0.0.1 en la RUTA: /pages/pagina3.html

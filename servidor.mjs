@@ -17,8 +17,10 @@ const server = http.createServer((req, res) => {
                 res.writeHead(500, {"Content-Type": "text/plain"});
                 res.end("Error interno del servidor " + error);
             } else {
+                escribirFichero(stream, req.url, PORT, HOST); // Función para escribir el fichero importada
                 res.writeHead(200, {"Content-Type": "text/html"});
                 res.end(data);
+                
             }
         });
 
@@ -29,6 +31,7 @@ const server = http.createServer((req, res) => {
                 res.writeHead(500, {"Content-Type":"text/plain"});
                 res.end("Error interno del servidor: " + error);
             } else {
+                escribirFichero(stream, req.url, PORT, HOST); // Función para escribir el fichero importada
                 res.writeHead(200, {"Content-Type":"text/html"});
                 res.end(data);
             }
@@ -41,6 +44,7 @@ const server = http.createServer((req, res) => {
                 res.writeHead(500, {"Content-Type":"text/plain"});
                 res.end("Error interno del servidor: " + error);
             } else {
+                escribirFichero(stream, req.url, PORT, HOST); // Función para escribir el fichero importada
                 res.writeHead(200, {"Content-Type":"text/html"});
                 res.end(data);
             }
@@ -53,6 +57,7 @@ const server = http.createServer((req, res) => {
                 res.writeHead(500, {"Content-Type":"text/plain"});
                 res.end("Error interno del servidor: " + error);
             } else {
+                escribirFichero(stream, req.url, PORT, HOST); // Función para escribir el fichero importada
                 res.writeHead(200, {"Content-Type":"text/html"});
                 res.end(data);
             }
@@ -66,17 +71,13 @@ const server = http.createServer((req, res) => {
                 res.writeHead(500, {"Content-Type": "text/plain"});
                 res.end("Error interno del servidor");
             } else {
+                escribirFichero(stream, req.url, PORT, HOST); // Función para escribir el fichero importada
                 res.writeHead(200, {"Content-Type": "text/html"});
                 res.end(data);
             }
          });
     }
 
-
-
-
-
-    escribirFichero(stream, PORT, HOST); // Función para escribir el fichero importada
 });
 
 
