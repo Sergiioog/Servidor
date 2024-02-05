@@ -9,7 +9,7 @@ function controladorRutas(ruta,res,PORT,HOST) {
 
     if (ruta === "/") {
 
-        fs.readFile('./pages/index.html', 'utf-8', (error, data) => {
+        fs.readFile('./pages/home.html', 'utf-8', (error, data) => {
             if (error) {
                 res.writeHead(500, {"Content-Type": "text/plain"});
                 res.end("Error interno del servidor " + error);
