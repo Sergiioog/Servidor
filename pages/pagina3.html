@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container px-5">
+            <a class="navbar-brand" href="https://www.bentleymotors.com/en.html">
+                <img src="assets/bentleylogo.png" alt="Logo Bentley" id="logoBentley">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" routerLink="/index">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" routerLink="/about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" routerLink="/contact">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" routerLink="/faq">FAQ</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="navbarDropdownPortfolio" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Our Blog</a>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownPortfolio">
+                            <li><a class="dropdown-item" routerLink="/blog-home">Blog-Home</a></li>
+                            <li><a class="dropdown-item" routerLink="/blog-post">Blog-Post</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Header-->
+    <header class="bg-dark py-5">
+        
+        <div class="container px-5">
+            <div class="row gx-5 align-items-center justify-content-center">
+                <div class="col-lg-8 col-xl-7 col-xxl-6">
+                    <div class="my-5 text-center text-xl-start">
+                        <h1 class="display-5 fw-bolder text-white mb-2">Bentley, what you deserve</h1>
+                        <p class="lead fw-normal text-white-50 mb-4">
+                            Step into the world of Bentley, where luxury and sophistication converge to create automotive masterpieces. 
+                        </p>
+                        <div class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xl-start">
+                            <a class="btn btn-success btn-lg px-4 me-sm-3" href="#bentley">Buy a Bentley</a>
+                            <a class="btn btn-outline-light btn-lg px-4" href="#features">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-5 col-xxl-6 d-none d-xl-block text-center"><img class="img-fluid rounded-3 my-5" src="assets/bentleynegro.jpg" alt="Bentley Negro" /></div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Content-->
+<section class="py-5">
+    <div class="container px-5 my-5">
+        <div class="text-center mb-5">
+            <h1 class="fw-bolder">Frequently Asked Questions</h1>
+            <p class="lead fw-normal text-muted mb-0">How can we help you?</p>
+        </div>
+        <div class="row gx-5">
+            <div class="col-xl-8">
+                <!-- FAQ Accordion 1-->
+                <h2 class="fw-bolder mb-3">Car Issues</h2>
+                <div class="accordion mb-5" id="accordionExample">
+                    <div class="accordion-item">
+                        <h3 class="accordion-header" id="headingOne"><button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">What should I do if my Bentley experiences engine issues?</button></h3>
+                        <div class="accordion-collapse collapse show" id="collapseOne" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                If you encounter engine issues with your Bentley, we recommend contacting our customer support immediately at <a href="tel:+123456789">+1 (234) 567-89</a>. Our team will guide you through troubleshooting steps or schedule a service appointment to address the problem promptly.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h3 class="accordion-header" id="headingTwo"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">How can I resolve problems with the car's electronic systems?</button></h3>
+                        <div class="accordion-collapse collapse" id="collapseTwo" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                Electronic system issues can be complex, but you can start by checking the vehicle's manual for troubleshooting tips. If the problem persists, reach out to our technical support team at <a href="mailto:support@bentley.com">support@bentley.com</a> for personalized assistance.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h3 class="accordion-header" id="headingThree"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">What to do if my Bentley experiences issues with the suspension?</button></h3>
+                        <div class="accordion-collapse collapse" id="collapseThree" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                Suspension issues require professional attention. Contact our service center to schedule an inspection. Visit our website or call <a href="tel:+123456789">+1 (234) 567-89</a> for assistance.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- FAQ Accordion 2-->
+                <h2 class="fw-bolder mb-3">Website Issues</h2>
+                <div class="accordion mb-5 mb-xl-0" id="accordionExample2">
+                    <div class="accordion-item">
+                        <h3 class="accordion-header" id="headingOne2"><button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne2" aria-expanded="true" aria-controls="collapseOne2">How can I troubleshoot website login problems?</button></h3>
+                        <div class="accordion-collapse collapse show" id="collapseOne2" aria-labelledby="headingOne2" data-bs-parent="#accordionExample2">
+                            <div class="accordion-body">
+                                If you're experiencing login issues on our website, try resetting your password. If the problem persists, contact our website support team at <a href="mailto:web_support@bentley.com">web_support@bentley.com</a> for assistance in resolving the login problem.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h3 class="accordion-header" id="headingTwo2"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo2" aria-expanded="false" aria-controls="collapseTwo2">Why can't I access certain features on the Bentley website?</button></h3>
+                        <div class="accordion-collapse collapse" id="collapseTwo2" aria-labelledby="headingTwo2" data-bs-parent="#accordionExample2">
+                            <div class="accordion-body">
+                                If you're unable to access specific features on our website, it could be due to browser compatibility or technical issues. Please ensure your browser is up-to-date. If the problem persists, contact our website support team for further assistance.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h3 class="accordion-header" id="headingThree2"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree2" aria-expanded="false" aria-controls="collapseThree2">How can I report a bug on the Bentley website?</button></h3>
+                        <div class="accordion-collapse collapse" id="collapseThree2" aria-labelledby="headingThree2" data-bs-parent="#accordionExample2">
+                            <div class="accordion-body">
+                                To report a bug on our website, please email details to <a href="mailto:bugs@bentley.com">bugs@bentley.com</a>. Include a description of the issue, steps to reproduce it, and any screenshots if possible. Your feedback helps us improve our online experience.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4">
+                <div class="card border-0 bg-light mt-xl-5">
+                    <div class="card-body p-4 py-lg-5">
+                        <div class="d-flex align-items-center justify-content-center">
+                            <div class="text-center">
+                                <div class="h6 fw-bolder">Have more questions?</div>
+                                <p class="text-muted mb-4">
+                                    Contact us at
+                                    <br />
+                                    <a href="tel:+123456789">+1 (234) 567-89</a>
+                                </p>
+                                <div class="h6 fw-bolder">Follow us</div>
+                                <a class="fs-5 px-2 link-dark" href="#!"><i class="bi-twitter"></i></a>
+                                <a class="fs-5 px-2 link-dark" href="#!"><i class="bi-facebook"></i></a>
+                                <a class="fs-5 px-2 link-dark" href="#!"><i class="bi-linkedin"></i></a>
+                                <a class="fs-5 px-2 link-dark" href="#!"><i class="bi-youtube"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<footer class="bg-dark py-4 mt-auto">
+    <div class="container px-5">
+        <div class="row align-items-center justify-content-between flex-column flex-sm-row">
+            <div class="col-auto"><div class="small m-0 text-white">Copyright &copy; Bentley 2023</div></div>
+            <div class="col-auto">
+                <a class="link-light small" href="https://www.bentleymotors.com/en/pages/privacy-policy.html">Privacy</a>
+                <span class="text-white mx-1">&middot;</span>
+                <a class="link-light small" href="https://www.bentleymotors.com/en/pages/terms-and-conditions.html">Terms</a>
+                <span class="text-white mx-1">&middot;</span>
+                <a class="link-light small" href="https://www.bentleymotors.com/en/pages/contact-us.html">Contact</a>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
