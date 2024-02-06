@@ -5,25 +5,25 @@ import rutas from './rutas.mjs';
 
 
 function controladorRutas(ruta,res,PORT,HOST) {
-    const stream = fs.createWriteStream('./logs/registros.txt', { flags: 'a' });
+    const stream = fs.createWriteStream('./logs/registros.txt', { flags: 'a' }); //Creamos el stream que se va a pasar al escritura.mjs
 
-    if (ruta === "/") {
+    if (ruta === "/") { //Ruta base
 
-        fs.readFile('./pages/home.html', 'utf-8', (error, data) => {
-            if (error) {
-                res.writeHead(500, {"Content-Type": "text/plain"});
-                res.end("Error interno del servidor " + error);
+        fs.readFile('./pages/home.html', 'utf-8', (error, data) => { //Leer archivo especificado
+            if (error) { //Si error
+                res.writeHead(500, {"Content-Type": "text/plain"}); //Que me escriba esta cabecera
+                res.end("Error interno del servidor " + error); //Y me diga esto
             } else {
                 escribirFichero(stream, ruta, PORT, HOST); // Función para escribir el fichero importada
-                res.writeHead(200, {"Content-Type": "text/html"});
-                res.end(data);
+                res.writeHead(200, {"Content-Type": "text/html"}); //Que me enseñe el html de esa ruta
+                res.end(data); //Que finalice la conexion con los datos extraidos
                 
             }
         });
 
-    } else if (ruta === "/pages/pagina1.html") {
+    } else if (ruta === "/pages/about.html") {
 
-        fs.readFile('./pages/pagina1.html', 'utf-8', (error, data) => {
+        fs.readFile('./pages/about.html', 'utf-8', (error, data) => {
             if (error) {
                 res.writeHead(500, {"Content-Type":"text/plain"});
                 res.end("Error interno del servidor: " + error);
@@ -34,9 +34,9 @@ function controladorRutas(ruta,res,PORT,HOST) {
             }
         });
 
-    } else if (ruta === "/pages/pagina2.html") {
+    } else if (ruta === "/pages/contact.html") {
 
-        fs.readFile('./pages/pagina2.html', 'utf-8', (error, data) => {
+        fs.readFile('./pages/contact.html', 'utf-8', (error, data) => {
             if (error) {
                 res.writeHead(500, {"Content-Type":"text/plain"});
                 res.end("Error interno del servidor: " + error);
@@ -47,9 +47,9 @@ function controladorRutas(ruta,res,PORT,HOST) {
             }
         });
 
-    } else if (ruta === "/pages/pagina3.html") {
+    } else if (ruta === "/pages/faq.html") {
 
-        fs.readFile('./pages/pagina3.html', 'utf-8', (error, data) => {
+        fs.readFile('./pages/faq.html', 'utf-8', (error, data) => {
             if (error) {
                 res.writeHead(500, {"Content-Type":"text/plain"});
                 res.end("Error interno del servidor: " + error);
@@ -61,13 +61,13 @@ function controladorRutas(ruta,res,PORT,HOST) {
         });
 
     } else {
-        fs.readFile('./pages/404.html', 'utf-8', (error, data) => {
+        fs.readFile('./pages/404.html', 'utf-8', (error, data) => { //Para el resto de casos que me muestre el html 404
             if (error) {
                 console.log("Lo sentimos, la página de error no se pudo mostrar")
-                res.writeHead(500, {"Content-Type": "text/plain"});
+                res.writeHead(500, {"Content-Type": "text/plain"}); //Si hay errores ocurre esto
                 res.end("Error interno del servidor");
             } else {
-                escribirFichero(stream, ruta, PORT, HOST);
+                escribirFichero(stream, ruta, PORT, HOST); //Si no que me muestre el contenido del fichero 404.html
                 res.writeHead(404, {"Content-Type": "text/html"});
                 res.end(data);
             }
@@ -75,4 +75,4 @@ function controladorRutas(ruta,res,PORT,HOST) {
     }
     
 }
-export default controladorRutas;
+export default controladorRutas; //La exportamos para usarla en otros archivos
